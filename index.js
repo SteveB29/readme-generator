@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const generateReadMe = require('./src/readme-template.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -125,5 +126,5 @@ function init() {
 // Function call to initialize app
 init()
   .then(data => {
-    console.log(data);
+    generateReadMe(data);
   });
