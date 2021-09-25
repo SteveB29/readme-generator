@@ -64,7 +64,7 @@ const questions = [
   {
     type: 'input',
     name: 'install',
-    message: 'Descripbe how to install your project (required)',
+    message: 'Describe how to install your project (required)',
     validate: installDesc => {
       if (installDesc) {
         return true;
@@ -77,7 +77,7 @@ const questions = [
   {
     type: 'input',
     name: 'usage',
-    message: 'Descripbe the usage of your app (required)',
+    message: 'Describe the usage of your app (required)',
     validate: usageInput => {
       if (usageInput) {
         return true;
@@ -90,7 +90,7 @@ const questions = [
   {
     type: 'input',
     name: 'contributing',
-    message: 'Descripbe how to contribute (required)',
+    message: 'Describe how to contribute (required)',
     validate: contrInput => {
       if (contrInput) {
         return true;
@@ -103,7 +103,7 @@ const questions = [
   {
     type: 'input',
     name: 'test',
-    message: 'Descripbe test instructions (required)',
+    message: 'Describe test instructions (required)',
     validate: testInput => {
       if (testInput) {
         return true;
