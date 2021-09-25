@@ -125,6 +125,9 @@ function init() {
 
 // Function call to initialize app
 init()
-  .then(data => {
-    generateReadMe(data);
+  .then(readmeData => {
+    return generateReadMe(readmeData);
+  })
+  .then(readmeMD => {
+    console.log(readmeMD);
   });
