@@ -46,6 +46,13 @@ module.exports = templateData => {
   ${liscenseBadge(liscense)}
   ## Description
   - ${description}
+  ## Table of Contents
+  - [Go to Installation Instructions](#install-instructions)
+  - [Go to Usage](#usage)
+  - [Go to Liscense section](#liscense)
+  - [Go to Contribution](#contribution)
+  - [#Go to Test Instructions](#test-instructions)
+  - [Go to Questions](#questions)
   ## Install Instructions
   - ${install}
   ## Usage
