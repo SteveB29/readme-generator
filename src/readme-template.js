@@ -1,3 +1,4 @@
+const dedent = require('dedent');
 
 const liscenseBadge = liscenseChoice => {
   switch (liscenseChoice) {
@@ -40,7 +41,7 @@ module.exports = templateData => {
 
   const {github, email, title, description, liscense, install, usage, contributing, test} = templateData
 
-  return`
+  return dedent`
   # ${title}
   ${liscenseBadge(liscense)}
   ## Description
