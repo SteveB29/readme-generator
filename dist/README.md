@@ -1,24 +1,24 @@
-# ReadMe Generator
+# Readme generator
 Choice A badge code
 ## Description
-- Description of application
+- Generates a readme
 ## Table of Contents
 - [Go to Installation Instructions](#install-instructions)
 - [Go to Usage](#usage)
-- [Go to Liscense section](#liscense)
+- [Go to License section](#license)
 - [Go to Contribution](#contribution)
-- [#Go to Test Instructions](#test-instructions)
+- [Go to Test Instructions](#test-instructions)
 - [Go to Questions](#questions)
 ## Install Instructions
-- Clone, Node, npm
+- Clone, node, npm install
 ## Usage
-- Use for whatever
-## Liscense
+- Anyone can use
+## License
 - Choice A link and desc code
 ## Contribution
-- pull request
+- Anyone can contribute
 ## Test Instructions
 No test
 ## Questions
-SteveB29
-steven.bendrick@gmail.com
+- [GitHub](https://github.com/SteveB29)
+- [Email Me](mailto:steven.bendrick@gmail.com)
