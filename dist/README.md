@@ -1,17 +1,24 @@
-# ReadMe generator
-Choice C badge code
+# ReadMe Generator
+Choice A badge code
 ## Description
-- Generates a professional readme
+- Description of application
+## Table of Contents
+- [Go to Installation Instructions](#install-instructions)
+- [Go to Usage](#usage)
+- [Go to Liscense section](#liscense)
+- [Go to Contribution](#contribution)
+- [#Go to Test Instructions](#test-instructions)
+- [Go to Questions](#questions)
 ## Install Instructions
-- Download or clone code, install or have node installed, npm install, ready to go
+- Clone, Node, npm
 ## Usage
-- Whomever can use this app
+- Use for whatever
 ## Liscense
-- Choice C link and desc code
+- Choice A link and desc code
 ## Contribution
-- Fork and contribute your own or submit a pull request
+- pull request
 ## Test Instructions
-No test instrcutions
+No test
 ## Questions
 SteveB29
 steven.bendrick@gmail.com
