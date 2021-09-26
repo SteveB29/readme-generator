@@ -12,7 +12,7 @@ const liscenseBadge = liscenseChoice => {
     case 'No Liscense':
       return '';
     default:
-      console.log('An error has occured creating the liscense, none will be added');
+      console.log('An error has occured creating the liscense bade, none will be added');
       return '';
   }
 }
@@ -30,6 +30,7 @@ const liscenseLink = liscenseChoice => {
     case 'No Liscense':
       return '';
     default:
+      console.log('An error has occured creating the liscense link and description, none will be added');
       return '';
   }
 }

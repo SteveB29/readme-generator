@@ -1,19 +1,18 @@
 
-  # Readme gen
-  Choice B badge code
+  # SChoice A badge code
   ## Description
-  - Desc
+  - S
   ## Install Instructions
-  - Install this way
+  - S
   ## Usage
-  - anyone
+  - S
   ## Liscense
-  - Choice B link and desc code
+  - Choice A link and desc code
   ## Contribution
-  - anyone can
+  - S
   ## Test Instructions
-  no instr
+  S
   ## Questions
-  SteveB
-  gmail
+  S
+  S
   
