@@ -1,49 +1,37 @@
 const dedent = require('dedent');
 
-const licenseBadge = licenseChoice => {
-  switch (licenseChoice) {
-    case 'Choice A':
-      return `Choice A badge code`;
-    case 'Choice B':
-      return `Choice B badge code`;
-    case 'Choice C':
-      return `Choice C badge code`;
-    case 'Choice D':
-      return `Choice D badge code`;
-    case 'No License':
-      return '';
-    default:
-      console.log('An error has occured creating the license bade, none will be added');
-      return '';
-  }
-}
-
-const licenseLink = licenseChoice => {
-  switch (licenseChoice) {
-    case 'Choice A':
-      return `Choice A link and desc code`;
-    case 'Choice B':
-      return `Choice B link and desc code`;
-    case 'Choice C':
-      return `Choice C link and desc code`;
-    case 'Choice D':
-      return `Choice D link and desc code`;
-    case 'No License':
-      return '';
-    default:
-      console.log('An error has occured creating the license link and description, none will be added');
-      return '';
+var licenseObject = {
+  'Choice A': {
+    badge: `Choice A badge `,
+    link: `Choice A link`
+  },
+  'Choice B': {
+    badge: `Choice B badge `,
+    link: `Choice B link`
+  },
+  'Choice C': {
+    badge: `Choice C badge `,
+    link: `Choice C link`
+  },
+  'Choice D': {
+    badge: `Choice D badge `,
+    link: `Choice D link`
+  },
+  'No License': {
+    badge: `No License badge `,
+    link: `No License link`
   }
 }
 
 module.exports = templateData => {
   // console.log(templateData);
 
-  const {github, email, title, description, license, install, usage, contributing, test} = templateData
+  const {github, email, title, description, license, install, usage, contributing, test} = templateData;
+  const licenseChoice = licenseObject[license];
 
   return dedent`
   # ${title}
-  ${licenseBadge(license)}
+  ${licenseChoice.badge}
   ## Description
   - ${description}
   ## Table of Contents
@@ -58,7 +46,7 @@ module.exports = templateData => {
   ## Usage
   - ${usage}
   ## License
-  - ${licenseLink(license)}
+  - ${licenseChoice.link}
   ## Contribution
   - ${contributing}
   ## Test Instructions
