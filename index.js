@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const generateReadMe = require('./src/readme-template.js');
+const { writeFile } = require('./utils/writeCopyFile.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -59,7 +60,7 @@ const questions = [
   {
     type: 'list',
     name: 'liscense',
-    choices: ['Choice A','Choice B','Choice C','Choice D']
+    choices: ['Choice A','Choice B','Choice C','Choice D','No Liscense']
   },
   {
     type: 'input',
@@ -129,5 +130,11 @@ init()
     return generateReadMe(readmeData);
   })
   .then(readmeMD => {
-    console.log(readmeMD);
+    return writeFile(readmeMD);
+  })
+  .then(writeFileResponse => {
+    console.log(writeFileResponse);
+  })
+  .catch(err => {
+    console.log(err);
   });
