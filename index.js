@@ -59,8 +59,8 @@ const questions = [
   },
   {
     type: 'list',
-    name: 'liscense',
-    choices: ['Choice A','Choice B','Choice C','Choice D','No Liscense']
+    name: 'license',
+    choices: ['Choice A','Choice B','Choice C','Choice D','No License']
   },
   {
     type: 'input',
