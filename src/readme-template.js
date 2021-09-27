@@ -1,6 +1,6 @@
 const dedent = require('dedent');
 
-var licenseObject = {
+const licenseObject = {
   'GNU GPLv3': {
     badge: `https://img.shields.io/badge/License-GNU%20GPLv3-yellow`,
     link: `https://www.gnu.org/licenses/gpl-3.0.en.html`
@@ -36,7 +36,6 @@ var licenseObject = {
 }
 
 module.exports = templateData => {
-  // console.log(templateData);
 
   const {github, email, title, description, license, install, usage, contributing, test} = templateData;
   const licenseChoiceObj = licenseObject[license];
@@ -62,7 +61,7 @@ module.exports = templateData => {
   ## Contribution
   - ${contributing}
   ## Test Instructions
-  ${test}
+  - ${test}
   ## Questions
   - [GitHub](https://github.com/${github})
   - [Email Me](mailto:${email})

@@ -18,7 +18,7 @@
 ## Contribution
 - Fork the repository or contribute here and create your own pull requests
 ## Test Instructions
-No tests for this application currently
+- No tests for this application currently
 ## Questions
 - [GitHub](https://github.com/SteveB29)
 - [Email Me](mailto:steven.bendrick@gmail.com)
