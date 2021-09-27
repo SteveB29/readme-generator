@@ -43,6 +43,14 @@ const licenseSection = (license, licenseLink) => {
   };
 };
 
+const licenseBadge = (license, licenseBadgeLink, licenseLink) => {
+  if (license === "No License") {
+    return``;
+  } else {
+    return`- [![${license}](${licenseBadgeLink})](${licenseLink})`
+  };
+};
+
 module.exports = templateData => {
 
   const {github, email, title, description, license, install, usage, contributing, test} = templateData;
@@ -50,7 +58,7 @@ module.exports = templateData => {
 
   return dedent`
   # ${title}
-  [![${license}](${licenseChoiceObj.badge})](${licenseChoiceObj.link})
+  ${licenseBadge(license, licenseChoiceObj.badge, licenseChoiceObj.link)}
   ## Description
   - ${description}
   ## Table of Contents
