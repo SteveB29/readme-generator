@@ -1,25 +1,37 @@
 const dedent = require('dedent');
 
 var licenseObject = {
-  'Choice A': {
-    badge: `Choice A badge `,
-    link: `Choice A link`
+  'GNU GPLv3': {
+    badge: `https://img.shields.io/badge/License-GNU%20GPLv3-yellow`,
+    link: `https://www.gnu.org/licenses/gpl-3.0.en.html`
   },
-  'Choice B': {
-    badge: `Choice B badge `,
-    link: `Choice B link`
+  'Mozilla Public License 2.0': {
+    badge: `https://img.shields.io/badge/License-Mozilla%20Public%20License%202.0-yellow`,
+    link: `https://www.mozilla.org/en-US/MPL/2.0/`
   },
-  'Choice C': {
-    badge: `Choice C badge `,
-    link: `Choice C link`
+  'Apache License 2.0': {
+    badge: `https://img.shields.io/badge/License-Apache%20License%202.0-green`,
+    link: `https://www.apache.org/licenses/LICENSE-2.0`
   },
-  'Choice D': {
-    badge: `Choice D badge `,
-    link: `Choice D link`
+  'MIT License': {
+    badge: `https://img.shields.io/badge/License-MIT%20License-green`,
+    link: `https://opensource.org/licenses/MIT`
+  },
+  'Boost Software License 1.0': {
+    badge: `https://img.shields.io/badge/License-Boost%20Software%20License%201.0-green`,
+    link: `https://www.boost.org/LICENSE_1_0.txt`
+  },
+  'ISC License': {
+    badge: `https://img.shields.io/badge/License-ISC%20License-green`,
+    link: `https://opensource.org/licenses/ISC`
+  },
+  'The Unlicense': {
+    badge: `https://img.shields.io/badge/License-The%20Unlicense-brightgreen`,
+    link: `https://unlicense.org/`
   },
   'No License': {
-    badge: `No License badge `,
-    link: `No License link`
+    badge: ``,
+    link: ``
   }
 }
 
@@ -27,11 +39,11 @@ module.exports = templateData => {
   // console.log(templateData);
 
   const {github, email, title, description, license, install, usage, contributing, test} = templateData;
-  const licenseChoice = licenseObject[license];
+  const licenseChoiceObj = licenseObject[license];
 
   return dedent`
   # ${title}
-  ${licenseChoice.badge}
+  [![${license}](${licenseChoiceObj.badge})](${licenseChoiceObj.link})
   ## Description
   - ${description}
   ## Table of Contents
@@ -46,7 +58,7 @@ module.exports = templateData => {
   ## Usage
   - ${usage}
   ## License
-  - ${licenseChoice.link}
+  - To see more about the ${license}, click this [link](${licenseChoiceObj.link}).
   ## Contribution
   - ${contributing}
   ## Test Instructions

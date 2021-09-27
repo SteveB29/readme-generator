@@ -60,7 +60,7 @@ const questions = [
   {
     type: 'list',
     name: 'license',
-    choices: ['Choice A','Choice B','Choice C','Choice D','No License']
+    choices: ['GNU GPLv3','Mozilla Public License 2.0','Apache License 2.0','MIT License','Boost Software License 1.0','ISC License','The Unlicense','No License']
   },
   {
     type: 'input',
