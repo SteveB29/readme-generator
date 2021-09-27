@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// adds inquirer, template script and copy file script
 const inquirer = require('inquirer');
 const generateReadMe = require('./src/readme-template.js');
 const { writeFile } = require('./utils/writeCopyFile.js')
 
-// TODO: Create an array of questions for user input
+// array of questions to be pulled by inquirere
 const questions = [
   {
     type: 'input',
@@ -60,7 +60,7 @@ const questions = [
   {
     type: 'list',
     name: 'license',
-    choices: ['GNU GPLv3','Mozilla Public License 2.0','Apache License 2.0','MIT License','Boost Software License 1.0','ISC License','The Unlicense','No License']
+    choices: ['GNU GPLv3 License','Mozilla Public License 2.0','Apache License 2.0','MIT License','Boost Software License 1.0','ISC License','The Unlicense','No License']
   },
   {
     type: 'input',
@@ -116,25 +116,26 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
+// starts inquirer and prompts all questions an return results object
 function init() {
   return inquirer.prompt(questions);
 }
 
-// Function call to initialize app
+// initiates the app
 init()
+  // takes the answers and send it to the readme-template and generates the page
   .then(readmeData => {
     return generateReadMe(readmeData);
   })
+  // takes the generated page and copies it to the distribution folder
   .then(readmeMD => {
     return writeFile(readmeMD);
   })
+  // takes the writeFile promise and displays if successful or failed
   .then(writeFileResponse => {
     console.log(writeFileResponse);
   })
+  // logs the error if writeFile fails
   .catch(err => {
     console.log(err);
   });

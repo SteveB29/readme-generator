@@ -1,7 +1,9 @@
+// dedent npm that removes extraneous indents in template literal
 const dedent = require('dedent');
 
+// object of all license information
 const licenseObject = {
-  'GNU GPLv3': {
+  'GNU GPLv3 License': {
     badge: `https://img.shields.io/badge/License-GNU%20GPLv3-yellow`,
     link: `https://www.gnu.org/licenses/gpl-3.0.en.html`
   },
@@ -35,14 +37,16 @@ const licenseObject = {
   }
 };
 
+// if no license returns code that explains so, otherwise creates license information
 const licenseSection = (license, licenseLink) => {
   if (license === "No License") {
     return`This project does not have a license associated with it`;
   } else {
-    return`This application is coved under the ${license}, click [this link](${licenseLink}) to see more details.`;
+    return`This application is covered under the ${license}, click [this link](${licenseLink}) to see more details.`;
   };
 };
 
+// in no license returns blank string, otherwise returns license badge link formatted for a .md file
 const licenseBadge = (license, licenseBadgeLink, licenseLink) => {
   if (license === "No License") {
     return``;
@@ -52,10 +56,12 @@ const licenseBadge = (license, licenseBadgeLink, licenseLink) => {
 };
 
 module.exports = templateData => {
-
+  // creates constants out of the inquirer response object from index.js
   const {github, email, title, description, license, install, usage, contributing, test} = templateData;
+  // creates const object of specific license chosen
   const licenseChoiceObj = licenseObject[license];
 
+  // generates the .md file code and returns it to index.js
   return dedent`
   # ${title}
   ${licenseBadge(license, licenseChoiceObj.badge, licenseChoiceObj.link)}
@@ -74,7 +80,7 @@ module.exports = templateData => {
   - ${usage}
   ## License
   - ${licenseSection(license, licenseChoiceObj.link)}
-  ## Contribution
+  ## Contributing
   - ${contributing}
   ## Test Instructions
   - ${test}
