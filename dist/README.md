@@ -1,5 +1,5 @@
 # ReadMe Generator
-[![MIT License](https://img.shields.io/badge/License-MIT%20License-green)](https://opensource.org/licenses/MIT)
+[![Boost Software License 1.0](https://img.shields.io/badge/License-Boost%20Software%20License%201.0-green)](https://www.boost.org/LICENSE_1_0.txt)
 ## Description
 - Generates a professional readme using user input
 ## Table of Contents
@@ -10,15 +10,15 @@
 - [Go to Test Instructions](#test-instructions)
 - [Go to Questions](#questions)
 ## Install Instructions
-- Download or clone the files, have node installed or install node, npm install
+- Clone or fork, have node installed, install npm's
 ## Usage
-- Use to generate a professional looking ReadMe without the hassle of generating the whole readme file
+- Anyone is free to use this app to generate a professional readme without having to generate all the code
 ## License
-- To see more about the MIT License, click this [link](https://opensource.org/licenses/MIT).
+- This application is coved under the Boost Software License 1.0, click [this link](https://www.boost.org/LICENSE_1_0.txt) to see more details.
 ## Contribution
-- Fork the repository or contribute here and create your own pull requests
+- Clone this projet and create a pull request
 ## Test Instructions
-- No tests for this application currently
+- No test instructions for this application currently
 ## Questions
 - [GitHub](https://github.com/SteveB29)
 - [Email Me](mailto:steven.bendrick@gmail.com)

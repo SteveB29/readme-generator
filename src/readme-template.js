@@ -33,7 +33,15 @@ const licenseObject = {
     badge: ``,
     link: ``
   }
-}
+};
+
+const licenseSection = (license, licenseLink) => {
+  if (license === "No License") {
+    return`This project does not have a license associated with it`;
+  } else {
+    return`This application is coved under the ${license}, click [this link](${licenseLink}) to see more details.`;
+  };
+};
 
 module.exports = templateData => {
 
@@ -57,7 +65,7 @@ module.exports = templateData => {
   ## Usage
   - ${usage}
   ## License
-  - To see more about the ${license}, click this [link](${licenseChoiceObj.link}).
+  - ${licenseSection(license, licenseChoiceObj.link)}
   ## Contribution
   - ${contributing}
   ## Test Instructions
