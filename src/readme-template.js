@@ -71,7 +71,7 @@ module.exports = templateData => {
   - [Go to Installation Instructions](#install-instructions)
   - [Go to Usage](#usage)
   - [Go to License section](#license)
-  - [Go to Contribution](#contribution)
+  - [Go to Contributing](#contributing)
   - [Go to Test Instructions](#test-instructions)
   - [Go to Questions](#questions)
   ## Install Instructions
