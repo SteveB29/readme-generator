@@ -9,5 +9,5 @@
 - [Video Walkthrough](https://drive.google.com/file/d/1164gkN2YFEGnKzrE8mRnkynF38_Rf2mx/view)
 
 ## Screenshots
-![command prompt](./assets/screenshots/cmd-prompt.png)
-![Generated ReadMe](./assets/screenshots/gen-readme.png)
+![command prompt](./assets/cmd-prompt.png)
+![Generated ReadMe](./assets/gen-readme.png)
